@@ -1,4 +1,4 @@
-# Carla Camacho | Front End -  Portafolio
+# Carla Camacho | Front End -  AluraGeek
 
 <p align="center" >
      <img width="600" heigth="600" src="/assets/image.png">
