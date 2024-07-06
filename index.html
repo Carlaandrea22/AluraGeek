@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/flexbox.css">
+    
+</head>
+<body>
+    <header class="header">
+        <img class="img-header" src="/assets/image-removebg-preview (42).png" >
+        <h1 class="titulo-header"> AluraGeek </h1>
+    </header>
+    <div class="container">
+        <div class="products-section">
+            <h2>MIS PRODUCTOS: </h2>
+            <div id="product-list" class="product-list">
+
+            </div>
+        </div>
+        <div class="form-section">
+            <h2>AGREGAR PRODUCTO:</h2>
+            <form id="product-form">
+                <input type="text" id="name" placeholder="Nombre..." required>
+                <input type="number" id="price" placeholder="Precio..." required>
+                <input type="file" id="image" accept="image/*" required>
+                <img id="image-preview" src="#" alt="Vista previa de la imagen" style="display: none;">
+                <button type="submit">Enviar</button>
+                <button type="button" id="clear-button">Limpiar</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <p></p>
+        <p>DESARROLLADO POR CARLA CAMACHO</p>
+        <p>ALURA LATAM - 2024</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

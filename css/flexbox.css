@@ -1,0 +1,117 @@
+/* flexbox.css */
+
+/* Contenedor principal responsive */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 100px; /* Añadir margen inferior para el espacio del footer */
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+/* Sección de productos responsive */
+.products-section {
+    flex: 2;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .products-section {
+        margin-right: 20px;
+    }
+}
+
+/* Lista de productos responsive */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* Sección del formulario responsive */
+.form-section {
+    flex: 1;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Header responsive */
+.header {
+    background-color: #9BC1BC;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-header {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.titulo-header {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+}
+
+@media (min-width: 600px) {
+    .titulo-header {
+        font-size: 35px;
+    }
+
+    .img-header {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 768px) {
+    .titulo-header {
+        font-size: 40px;
+    }
+
+    .img-header {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .titulo-header {
+        font-size: 45px;
+    }
+
+    .img-header {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Footer responsive */
+.footer {
+    background-color: #9BC1BC;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    position: relative; /* Cambiado de fixed a relative */
+    bottom: 0;
+}
